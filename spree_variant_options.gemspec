@@ -20,13 +20,13 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # Runtime
-  s.add_dependency('spree_core', '~> 2.1')
-  s.add_dependency('spree_api', '~> 2.1')
-  s.add_dependency('spree_frontend', '~> 2.1')
-  s.add_dependency('spree_backend',  '~> 2.1')
+  s.add_dependency('spree_core', '~> 2.2.1')
+  s.add_dependency('spree_api', '~> 2.2.1')
+  s.add_dependency('spree_frontend', '~> 2.2.1')
+  s.add_dependency('spree_backend',  '~> 2.2.1')
 
   # Development
-  s.add_development_dependency('spree_sample',     '~> 2.1')
+  s.add_development_dependency('spree_sample',     '~> 2.2.1')
   s.add_development_dependency('dummier',          '~> 0.3')
   s.add_development_dependency('shoulda',          '~> 3.5')
   s.add_development_dependency('shoulda-context',  '~> 1.1.5')
@@ -35,12 +35,12 @@ Gem::Specification.new do |s|
   s.add_development_dependency('poltergeist', '~> 1.4.1')
   s.add_development_dependency('pry', '~> 0.9.12.2')
   s.add_development_dependency('m')
-  s.add_development_dependency('factory_girl_rails', '~> 4.2.1')
+  s.add_development_dependency('factory_girl_rails', '~> 4.4')
   s.add_development_dependency('cucumber-rails',   '~> 1.4')
   s.add_development_dependency('database_cleaner', '~> 1.2.0')
-  s.add_development_dependency('sqlite3',          '~> 1.3')
-  s.add_development_dependency('coffee-rails',     '~> 4.0')
-  s.add_development_dependency('capybara')
+  s.add_development_dependency('sqlite3',   )
+  s.add_development_dependency('coffee-rails',     '~> 4.0.0')
+  s.add_development_dependency('capybara', '~> 2.2.1')
   s.add_development_dependency('launchy')
   s.add_development_dependency('debugger')
   s.add_development_dependency("selenium-webdriver", '2.35.1')

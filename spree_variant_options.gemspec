@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   spree_version = '~> 2.3.0.beta'
   # Runtime
   s.add_dependency('spree_core', spree_version)
-  s.add_dependency('spree_api', spree_version')
+  s.add_dependency('spree_api', spree_version)
   s.add_dependency('spree_frontend', spree_version)
   s.add_dependency('spree_backend', spree_version)
 

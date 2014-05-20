@@ -19,14 +19,15 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
+  spree_version = '~> 2.3.0.beta'
   # Runtime
-  s.add_dependency('spree_core', '~> 2.2.1')
-  s.add_dependency('spree_api', '~> 2.2.1')
-  s.add_dependency('spree_frontend', '~> 2.2.1')
-  s.add_dependency('spree_backend',  '~> 2.2.1')
+  s.add_dependency('spree_core', spree_version)
+  s.add_dependency('spree_api', spree_version')
+  s.add_dependency('spree_frontend', spree_version)
+  s.add_dependency('spree_backend', spree_version)
 
   # Development
-  s.add_development_dependency('spree_sample',     '~> 2.2.1')
+  s.add_development_dependency('spree_sample', spree_version)
   s.add_development_dependency('dummier',          '~> 0.3')
   s.add_development_dependency('shoulda',          '~> 3.5')
   s.add_development_dependency('shoulda-context',  '~> 1.1.5')

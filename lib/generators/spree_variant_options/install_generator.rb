@@ -9,7 +9,8 @@ module SpreeVariantOptions
       end
 
       def add_javascripts
-        append_file "vendor/assets/javascripts/spree/frontend/all.js", "//= require spree/frontend/spree_variant_options\n"
+        append_file "vendor/assets/javascripts/spree/frontend/all.js", "//= require spree/frontend/variant_options\n"
+        append_file "vendor/assets/javascripts/spree/frontend/all.js", "//= require spree/frontend/product_variant_options\n"
       end
 
       def add_stylesheets

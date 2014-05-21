@@ -9,12 +9,12 @@ module SpreeVariantOptions
       end
 
       def add_javascripts
-        append_file "vendor/assets/javascripts/spree/frontend/all.js", "//= require spree/spree_variant_options\n"
+        append_file "vendor/assets/javascripts/spree/frontend/all.js", "//= require spree/frontend/spree_variant_options\n"
       end
 
       def add_stylesheets
-        inject_into_file "vendor/assets/stylesheets/spree/frontend/all.css", "*= require spree/variant_options\n", :before => /\*\//, :verbose => true
-        inject_into_file "vendor/assets/stylesheets/spree/backend/all.css", "*= require admin/variant_options\n", :before => /\*\//, :verbose => true
+        inject_into_file "vendor/assets/stylesheets/spree/frontend/all.css", "*= require spree/frontend/variant_options\n", :before => /\*\//, :verbose => true
+        inject_into_file "vendor/assets/stylesheets/spree/backend/all.css", "*= require spree/backtend/variant_options\n", :before => /\*\//, :verbose => true
       end
 
     end

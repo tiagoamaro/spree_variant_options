@@ -1,0 +1,7 @@
+pl:
+  spree:
+    preview: Podgląd
+    attach: Załącz
+    detach_image: Odłącz
+    select_a: "%{name}: "
+    variant_options_select: Wybierz opcje
